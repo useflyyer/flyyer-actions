@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - master
+      - main
+    paths:
+      - "**.jsx?"
+      - "**.tsx?"
 
 jobs:
   deploy:
