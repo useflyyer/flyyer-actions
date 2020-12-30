@@ -13,6 +13,7 @@ jobs:
 
     env:
       FLAYYER_KEY: ${{secrets.FLAYYER_KEY}}
+      NODE_ENV: production
 
     steps:
       - uses: actions/checkout@v2
@@ -29,7 +30,7 @@ jobs:
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
       - name: Install dependencies
-        run: yarn
+        run: yarn install --production=false # force install devDependencies
 
       - name: Build project
         run: yarn run build
