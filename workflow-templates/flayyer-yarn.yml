@@ -32,8 +32,8 @@ jobs:
       - name: Install dependencies
         run: yarn install --production=false # force install devDependencies
 
-      - name: Build project
+      - name: Build production deck
         run: yarn run build
 
-      - name: Publish
+      - name: Publish to Flayyer.com
         run: yarn run deploy
