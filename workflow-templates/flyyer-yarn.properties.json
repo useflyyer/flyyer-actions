@@ -1,0 +1,5 @@
+{
+  "name": "Flyyer deploy with Yarn",
+  "description": "Workflow to deploy Flyyer decks with Yarn",
+  "iconName": "icon"
+}

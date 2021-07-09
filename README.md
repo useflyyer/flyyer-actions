@@ -1,4 +1,4 @@
-# Flayyer Actions and Workflows for GitHub
+# Flyyer Actions and Workflows for GitHub
 
 ![deploy results](./assets/result.png)
 
@@ -11,7 +11,7 @@ mkdir -p .github/workflows
 touch .github/workflows/deploy.yml
 ```
 
-Copy the contents of from [workflow-templates/flayyer-yarn.yml](./workflow-templates/flayyer-yarn.yml) to your `.github/workflows/deploy.yml`.
+Copy the contents of from [workflow-templates/flyyer-yarn.yml](./workflow-templates/flyyer-yarn.yml) to your `.github/workflows/deploy.yml`.
 
 ### Via `curl`:
 
@@ -19,12 +19,12 @@ Write these two lines on your terminal:
 
 ```sh
 mkdir -p .github/workflows
-curl -L https://raw.githubusercontent.com/flayyer/flayyer-actions/main/workflow-templates/flayyer-yarn.yml --output .github/workflows/deploy.yml
+curl -L https://raw.githubusercontent.com/useflyyer/flyyer-actions/main/workflow-templates/flyyer-yarn.yml --output .github/workflows/deploy.yml
 ```
 
-## Add `FLAYYER_KEY` to your Github's secrets
+## Add `FLYYER_KEY` to your Github's secrets
 
-Get your `FLAYYER_KEY` from [https://app.flayyer.com/en/settings/keys](https://app.flayyer.com/en/settings/keys) then add it to your **Settings -> Secrets** inside the settings of your repository.
+Get your `FLYYER_KEY` from [https://flyyer.io/settings/keys](https://flyyer.io/settings/keys) then add it to your **Settings -> Secrets** inside the settings of your repository.
 
 ![secrets section in your repository's settings](./assets/settings-secrets.png)
 
